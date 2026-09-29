@@ -1,0 +1,89 @@
+<mxfile host="65bd71144e">
+    <diagram id="eplyKeSU3TzpiT-pJjLJ" name="Page-1">
+        <mxGraphModel dx="802" dy="654" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="start" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Inicio" vertex="1">
+                    <mxGeometry height="50" width="120" x="320" y="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="step_user" parent="1" style="whiteSpace=wrap;html=1;" value="Cliente elige qué desea adquirir en la app" vertex="1">
+                    <mxGeometry height="60" width="220" x="270" y="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="dec_type" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="¿Qué va a comprar?" vertex="1">
+                    <mxGeometry height="80" width="200" x="280" y="190" as="geometry"/>
+                </mxCell>
+                <mxCell id="opt_membership" parent="1" style="whiteSpace=wrap;html=1;" value="Membresía App (Beneficios y descuentos exclusivos)" vertex="1">
+                    <mxGeometry height="60" width="200" x="120" y="300" as="geometry"/>
+                </mxCell>
+                <mxCell id="opt_product" parent="1" style="whiteSpace=wrap;html=1;" value="Prenda personalizada (Talla medida en tienda + diseño)" vertex="1">
+                    <mxGeometry height="60" width="210" x="440" y="300" as="geometry"/>
+                </mxCell>
+                <mxCell id="dec_pay_method" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="¿Cómo realiza el pago?" vertex="1">
+                    <mxGeometry height="80" width="200" x="280" y="400" as="geometry"/>
+                </mxCell>
+                <mxCell id="pay_online" parent="1" style="whiteSpace=wrap;html=1;" value="Pago en línea (Tarjeta de crédito / débito)" vertex="1">
+                    <mxGeometry height="60" width="180" x="140" y="510" as="geometry"/>
+                </mxCell>
+                <mxCell id="pay_oxxo" parent="1" style="whiteSpace=wrap;html=1;" value="Pago en efectivo (Ficha para pagar en OXXO)" vertex="1">
+                    <mxGeometry height="60" width="180" x="440" y="510" as="geometry"/>
+                </mxCell>
+                <mxCell id="step_confirm" parent="1" style="whiteSpace=wrap;html=1;" value="Confirmación del pago e ingreso de dinero al negocio" vertex="1">
+                    <mxGeometry height="60" width="240" x="260" y="610" as="geometry"/>
+                </mxCell>
+                <mxCell id="end" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Fin" vertex="1">
+                    <mxGeometry height="50" width="120" x="320" y="700" as="geometry"/>
+                </mxCell>
+                <mxCell id="e0" edge="1" parent="1" source="start" style="endArrow=classic;html=1;rounded=0;" target="step_user">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e1" edge="1" parent="1" source="step_user" style="endArrow=classic;html=1;rounded=0;" target="dec_type">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e2" edge="1" parent="1" source="dec_type" style="endArrow=classic;html=1;rounded=0;labelBackgroundColor=#ffffff;" target="opt_membership" value="Membresía">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e3" edge="1" parent="1" source="dec_type" style="endArrow=classic;html=1;rounded=0;labelBackgroundColor=#ffffff;" target="opt_product" value="Prenda">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e4" edge="1" parent="1" source="opt_membership" style="endArrow=classic;html=1;rounded=0;" target="dec_pay_method">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="220" y="440"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e5" edge="1" parent="1" source="opt_product" style="endArrow=classic;html=1;rounded=0;" target="dec_pay_method">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="545" y="440"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e6" edge="1" parent="1" source="dec_pay_method" style="endArrow=classic;html=1;rounded=0;labelBackgroundColor=#ffffff;" target="pay_online" value="En línea">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e7" edge="1" parent="1" source="dec_pay_method" style="endArrow=classic;html=1;rounded=0;labelBackgroundColor=#ffffff;" target="pay_oxxo" value="En OXXO">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e8" edge="1" parent="1" source="pay_online" style="endArrow=classic;html=1;rounded=0;" target="step_confirm">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="230" y="640"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e9" edge="1" parent="1" source="pay_oxxo" style="endArrow=classic;html=1;rounded=0;" target="step_confirm">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="530" y="640"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e10" edge="1" parent="1" source="step_confirm" style="endArrow=classic;html=1;rounded=0;" target="end">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

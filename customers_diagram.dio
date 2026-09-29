@@ -1,0 +1,90 @@
+<mxfile host="65bd71144e">
+    <diagram id="3tzs6858DQQ_GgxXFdfz" name="Page-1">
+        <mxGraphModel dx="802" dy="654" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="start" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Inicio" vertex="1">
+                    <mxGeometry height="50" width="120" x="320" y="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="step_marketing" parent="1" style="whiteSpace=wrap;html=1;" value="Publicar contenido en redes (TikTok, Reels, Shorts) mostrando la ropa y la experiencia" vertex="1">
+                    <mxGeometry height="60" width="240" x="260" y="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="step_store" parent="1" style="whiteSpace=wrap;html=1;" value="Colocar código QR y publicidad visible dentro de la tienda física" vertex="1">
+                    <mxGeometry height="60" width="240" x="260" y="190" as="geometry"/>
+                </mxCell>
+                <mxCell id="dec_channel" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="¿Por qué medio conoce el cliente la app?" vertex="1">
+                    <mxGeometry height="80" width="220" x="270" y="280" as="geometry"/>
+                </mxCell>
+                <mxCell id="step_qr" parent="1" style="whiteSpace=wrap;html=1;" value="Escanea QR en vestidor/mostrador" vertex="1">
+                    <mxGeometry height="60" width="190" x="540" y="290" as="geometry"/>
+                </mxCell>
+                <mxCell id="step_link" parent="1" style="whiteSpace=wrap;html=1;" value="Hace clic en enlace de redes / anuncio" vertex="1">
+                    <mxGeometry height="60" width="190" x="30" y="290" as="geometry"/>
+                </mxCell>
+                <mxCell id="step_landing" parent="1" style="whiteSpace=wrap;html=1;" value="Llega a la App / Tienda de aplicaciones" vertex="1">
+                    <mxGeometry height="60" width="220" x="270" y="400" as="geometry"/>
+                </mxCell>
+                <mxCell id="step_promo" parent="1" style="whiteSpace=wrap;html=1;" value="Ofrecer incentivo inicial (ej. % de descuento en el primer diseño)" vertex="1">
+                    <mxGeometry height="60" width="220" x="270" y="490" as="geometry"/>
+                </mxCell>
+                <mxCell id="step_register" parent="1" style="whiteSpace=wrap;html=1;" value="Registro rápido de usuario en la app" vertex="1">
+                    <mxGeometry height="60" width="220" x="270" y="580" as="geometry"/>
+                </mxCell>
+                <mxCell id="step_first_design" parent="1" style="whiteSpace=wrap;html=1;" value="Creación del primer diseño personalizado" vertex="1">
+                    <mxGeometry height="60" width="220" x="270" y="670" as="geometry"/>
+                </mxCell>
+                <mxCell id="step_retention" parent="1" style="whiteSpace=wrap;html=1;" value="Envío de notificaciones / ofertas personalizadas para recompra" vertex="1">
+                    <mxGeometry height="60" width="240" x="260" y="760" as="geometry"/>
+                </mxCell>
+                <mxCell id="end" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Fin" vertex="1">
+                    <mxGeometry height="50" width="120" x="320" y="850" as="geometry"/>
+                </mxCell>
+                <mxCell id="e0" edge="1" parent="1" source="start" style="endArrow=classic;html=1;rounded=0;" target="step_marketing">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e1" edge="1" parent="1" source="step_marketing" style="endArrow=classic;html=1;rounded=0;" target="step_store">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e2" edge="1" parent="1" source="step_store" style="endArrow=classic;html=1;rounded=0;" target="dec_channel">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e3" edge="1" parent="1" source="dec_channel" style="endArrow=classic;html=1;rounded=0;labelBackgroundColor=#ffffff;" target="step_qr" value="En tienda">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e4" edge="1" parent="1" source="dec_channel" style="endArrow=classic;html=1;rounded=0;labelBackgroundColor=#ffffff;" target="step_link" value="En línea">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e5" edge="1" parent="1" source="step_qr" style="endArrow=classic;html=1;rounded=0;" target="step_landing">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="635" y="430"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e6" edge="1" parent="1" source="step_link" style="endArrow=classic;html=1;rounded=0;" target="step_landing">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="125" y="430"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e7" edge="1" parent="1" source="step_landing" style="endArrow=classic;html=1;rounded=0;" target="step_promo">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e8" edge="1" parent="1" source="step_promo" style="endArrow=classic;html=1;rounded=0;" target="step_register">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e9" edge="1" parent="1" source="step_register" style="endArrow=classic;html=1;rounded=0;" target="step_first_design">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e10" edge="1" parent="1" source="step_first_design" style="endArrow=classic;html=1;rounded=0;" target="step_retention">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e11" edge="1" parent="1" source="step_retention" style="endArrow=classic;html=1;rounded=0;" target="end">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
